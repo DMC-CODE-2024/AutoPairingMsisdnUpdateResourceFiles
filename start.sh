@@ -42,7 +42,7 @@ else  ## No process running
 
 #   java -Xmx1024m -Xms256m -Dlog4j.configurationFile=./log4j2.xml -Dspring.config.location=file:./application.yml -jar $PNAME REMINDER_UTILITY duplicate
 
-  java -Dlog4j.configurationFile=./log4j2.xml -Dlog.level=${log_level} -Dlog.path=${log_path} -Dmodule.name=${module_name} -Dspring.config.location=file:./application.properties,file:${commonConfigurationFile} -jar ${build} PAIR_UPDATE_MSISDN 1>/dev/null 2>${log_path}/${module_name}.error &
+  java -Dlog4j.configurationFile=./log4j2.xml -Dlog.level=${log_level} -Dlog.path=${log_path} -Dmodule.name=${module_name} -Dspring.config.location=file:./application.properties,file:${commonConfigurationFile} -jar ${build} 1>/dev/null 2>${log_path}/${module_name}.error &
 
   ## check if process started successfully or not
 
